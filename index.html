@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- A declaração DOCTYPE declara a versão do HTML usado no documento -->
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="styles/test-css.css" type="text/css">
+        <link rel="icon" href="images/hacker.png"> <!-- Colocar um icone no separador -->
+        <style>
+        a:link {
+            color: #8ebf42;
+        }
+        /* visited link */
+        a:visited {
+            color: #095484;
+        }
+        a:active{
+            color: Brown;
+        }
+        </style>
+        <meta charset=UTF-8>        <!-- para caracteres acentuados   -->
+        <title>Pagina de João Vivas</title>  <!-- texto na decoração da janela -->
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' 
+            rel='stylesheet'>
+    </head>
+    <body>
+
+        <h1>Índice</h1>
+        <ul style="list-style:none" class="forefround-color">
+            <li><a href="#nome">Nome</a></li>
+            <li><a href="#detalhes">Detalhes</a></li>
+        </ul>
+
+        <div>
+            <figure style="float:right; margin:50px">
+                <img id="cara"
+                    src="images/cara.jpg" 
+                    alt="Cara de João Vivas" 
+                >
+                <figcaption id="legenda_cara" class="foreground-color">Este sou eu</figcaption>
+            </figure>
+            <h1 id="nome">João Vivas</h1>
+            <p class="foreground-color" style="font-size:25px">
+                O meu nome é <em>João Vivas</em> sou estudante de 
+                <strong>Ciência dos computadores</strong> 
+                na <strong>Faculdade de Ciências da universidade do Porto</strong>.
+                Aqui tem o meu portefólio. 
+                <a href="https://github.com/MicoMan987" target="_blank">GitHub
+                </a>
+                <a href="https://github.com/MicoMan987" 
+                    style="text-decoration: none" target="_blank" >
+                    <img src="images/github-mark-white.svg" 
+                        style="width: 32px; height: 32px" 
+                        alt="Github icon with link to Github"
+                    >
+                </a>
+            </p>
+        </div>
+
+        <hr style="clear:both">
+
+        <!-- Lista -->
+        <h3>Detalhes</h3>
+        <ol id="detalhes" style="padding:10px">
+            <li class="foreground-color items" style="padding:10px">Sobre mim:
+                <ul>
+                    <li>Estudante de Ciência dos Computadores da FCUP.</li>
+                    <li>Gosto de programar em linguagens principalmente como C, C++ ou Java.</li>
+                    <li>Entusiasta de Linux.</li>
+                </ul>
+            </li>
+            <li class="foreground-color items" style="padding:10px">Contacto:
+                <ul>
+                    <li>E-mail: filipe.vivas.fv@gmail.com</li>
+                    <li>Twitter: <a href="https://twitter.com/VivasJoaoVivas">Aqui</a> </li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+
+    </body>
+</html>
