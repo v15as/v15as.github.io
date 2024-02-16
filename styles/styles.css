@@ -1,0 +1,105 @@
+@keyframes typing {
+from { max-width: 0; }
+to {max-width: 100%;}
+}
+
+@keyframes cursor-blink{
+from, to { border-color: transparent }
+50% { border-color: #f8f8ff; }
+}
+
+#typewriter {
+    letter-spacing: 10px;
+    display: inline-block;
+    border-right: 5px solid; /* Simulates the typing cursor */
+    width: auto;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden; /* Ensures the text does not overflow the container */
+    animation: 
+        typing 3s steps(17, end), /* Adjust the duration and steps as needed */
+        cursor-blink .75s step-end infinite;
+}
+
+.image-contentor{
+    width:100%;
+    heigth:100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    allign-items: center;
+    position:relative;
+    background-image:url(https://i.imgur.com/hAjKezr.jpeg);
+}
+
+h1, h2, h3{
+    letter-spacing: 5px;
+}
+
+.margin-title{
+    margin-top: 30vh;
+    margin-bottom: 50vh;
+}
+
+.margin{
+    margin-top: 30vh;
+}
+
+.margin-projects{
+    margin-top: 20vh;
+}
+
+.padding-space{
+    padding-top:50vh;
+}
+
+.back-color{
+    background-color:#333333;
+}
+
+body{
+    background-color:#333333;
+}
+
+.nav-link{
+    font-family: 'IBM Plex Mono';
+    color:#f8f8ff;
+}
+
+.text{
+    font-family: 'IBM Plex Mono';
+    color:#f8f8ff;
+}
+
+
+#profile-image{
+    width:100%;
+}
+
+.navbar-brand{
+    color:#f8f8ff;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.navbar-brand:hover{
+    color:#000000;
+}
+
+.carousel-item .card {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the card horizontally */
+}
+
+.carousel-item .card-img-top {
+    max-height: 200px; /* Adjust the maximum height of the image */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.carousel-item .card-body {
+    padding: 1rem; /* Add padding to the card body */
+}
+
+.carousel-item .card-text {
+    font-size: 14px; /* Adjust the font size of the card text */
+}

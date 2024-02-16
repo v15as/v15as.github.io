@@ -2,79 +2,155 @@
 <!-- A declaração DOCTYPE declara a versão do HTML usado no documento -->
 <html lang="pt">
     <head>
-        <link rel="stylesheet" href="styles/test-css.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
         <link rel="icon" href="images/hacker.png"> <!-- Colocar um icone no separador -->
-        <style>
-        a:link {
-            color: #8ebf42;
-        }
-        /* visited link */
-        a:visited {
-            color: #095484;
-        }
-        a:active{
-            color: Brown;
-        }
-        </style>
+        <title>João Vivas</title>  <!-- texto na decoração da janela -->
         <meta charset=UTF-8>        <!-- para caracteres acentuados   -->
-        <title>Pagina de João Vivas</title>  <!-- texto na decoração da janela -->
-        <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' 
-            rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
 
-        <h1>Índice</h1>
-        <ul style="list-style:none" class="forefround-color">
-            <li><a href="#nome">Nome</a></li>
-            <li><a href="#detalhes">Detalhes</a></li>
-        </ul>
-
-        <div>
-            <figure style="float:right; margin:50px">
-                <img id="cara"
-                    src="images/cara.jpg" 
-                    alt="Cara de João Vivas" 
-                >
-                <figcaption id="legenda_cara" class="foreground-color">Este sou eu</figcaption>
-            </figure>
-            <h1 id="nome">João Vivas</h1>
-            <p class="foreground-color" style="font-size:25px">
-                O meu nome é <em>João Vivas</em> sou estudante de 
-                <strong>Ciência dos computadores</strong> 
-                na <strong>Faculdade de Ciências da universidade do Porto</strong>.
-                Aqui tem o meu portefólio. 
-                <a href="https://github.com/MicoMan987" target="_blank">GitHub
-                </a>
-                <a href="https://github.com/MicoMan987" 
-                    style="text-decoration: none" target="_blank" >
-                    <img src="images/github-mark-white.svg" 
-                        style="width: 32px; height: 32px" 
-                        alt="Github icon with link to Github"
-                    >
-                </a>
-            </p>
+        <!-- Navigation bar-->
+        <div class="sticky-top text">
+            <nav class="navbar navbar-expand-lg back-color">
+                <div class="container-fluid">
+                    <a class="navbar-brand text" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#About-me">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <hr style="clear:both">
+        <!-- Title -->
+        <section>
+            <div class="image-contentor">
+                <div class="container text-center text margin-title">
+                    <h1 class="display-4" id="typewriter">João Vivas' Space</h1>
+                    <p class="lead">Student of Computer Science at FCUP</p>
+                </div>
+            </div>
+        </section>
+        <!-- About me -->
+        <div id="About-me">
+        </div>
+        <section class="margin">
+            <div class="container">
+                <div class="row gx-2">
+                    <div class="col-2">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <img src="images/fotoCara4.jpg" alt="Picure of João Vivas" id="profile-image" class="rounded-circle">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="pt-3 ps-5 pe-5 pb-1 rounded-5 bg-dark border">
+                            <div class="p-3 text">
+                                <h1>About me</h1>
+                                <p>During my time at university at Faculty of Sciences of Porto's
+                                    University (FCUP), I learnt about a wide range of areas,
+                                    including artificial intelligence, algorithms, data structures,
+                                    operating systems, compilers, among others. 
+                                    I like to always be learning and keeping up with new technologies,
+                                    so that I can always be always up to date with new trends in
+                                    the world of technology. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Lista -->
-        <h3>Detalhes</h3>
-        <ol id="detalhes" style="padding:10px">
-            <li class="foreground-color items" style="padding:10px">Sobre mim:
-                <ul>
-                    <li>Estudante de Ciência dos Computadores da FCUP.</li>
-                    <li>Gosto de programar em linguagens principalmente como C, C++ ou Java.</li>
-                    <li>Entusiasta de Linux.</li>
-                </ul>
-            </li>
-            <li class="foreground-color items" style="padding:10px">Contacto:
-                <ul>
-                    <li>E-mail: filipe.vivas.fv@gmail.com</li>
-                    <li>Twitter: <a href="https://twitter.com/VivasJoaoVivas">Aqui</a> </li>
-                </ul>
-            </li>
-        </ol>
-        <hr>
+        <!-- Projects -->
+        <div id="Projects"></div>
+        <section class="margin-projects text">
+            <h2 class="text-center">Projects</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <a href="https://github.com/up202107918/RedesdeComunicacao" class="card shadow-sm flex-grow-1">
+                                <img src="images/networking.jpg" class="card-img-top" alt="Networking">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Project of networks. Simulates a social network where users can create and join chat rooms to send messages to other users.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <a href="https://github.com/MicoMan987/ChatBot" class="card shadow-sm flex-grow-1">
+                                <img src="images/chatBot.jpg" class="card-img-top" alt="chat bot">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A chat bot made in Prolog. The subject of this bot is two college students talking about their grades.                                        </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <a href="https://github.com/MicoMan987/connect-4"  class="card shadow-sm flex-grow-1">
+                                <img src="images/connect4.jpg" class="card-img-top" style="max-width: 100%; max-height: 100%;" alt="Connect 4">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        An artificial intelligence that plays connect four in Java.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
+        <div id="Contact"></div>
+        <section>
+            <div class="text-center text" style="margin-top:50vh;margin-bottom:50vh;">
+                <h2>Contacts</h2>
+                <p>E-mail: filipe.vivas.fv@gmail.com</p>
+            </div>
+        </section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
 </html>
